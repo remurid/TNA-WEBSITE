@@ -116,7 +116,7 @@ h6,
 
 .navbar .navbar-brand {
     position: relative;
-    /* padding-right: 50px; */
+    padding-right: 50px;
     height: 75px;
     display: flex;
     background: var(--primary);
@@ -196,7 +196,7 @@ h6,
     bottom: 0;
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%);
+    background: linear-gradient(to right, rgba(59, 105, 86, 1) 0%, rgba(59, 105, 86, 0) 100%);
     z-index: 1;
 }
 
