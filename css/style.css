@@ -230,7 +230,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
+    background: linear-gradient(to right, rgba(59, 105, 86, 1) 0%, rgba(59, 105, 86, 0) 100%), url(../img/carousel-2.jpg) center center no-repeat;
     background-size: cover;
 }
 
