@@ -116,5 +116,136 @@
     });
 
     
+        
+   
+    
+    
+       
+    
+       
+      
+       
+    
 })(jQuery);
 
+$('.js-example-basic-single').select2();
+$('#departure_date').datetimepicker({
+    //formatTime:'H:i',
+    format:'d/m/Y',
+    formatDate:'Y/m/d',
+    minDate: 0,
+    timepicker:false 
+});
+
+$('#return_date').datetimepicker({
+    //formatTime:'H:i',
+    format:'d/m/Y',
+    formatDate:'Y/m/d',
+    minDate: 0,
+    timepicker:false
+});
+
+$(".revform").revform({
+    speed : 500,
+    transition : 'fade',
+    //progressBar : true,
+    //showProgressText : true,
+    validate: true
+});
+
+
+function validateForm(Obj){
+
+    var validobj = Obj.validate({
+        
+        rules: {
+        departure_city: {
+            required: true
+            
+        },
+        arrival_city: {
+            required: true
+        },
+        departure_date: {
+            required: true
+        },
+        return_date: {
+            required: true
+        },
+        selectBox: {
+            required: true
+            
+        },
+        first_name2: {
+            required: true
+        },
+        last_name2: {
+            required: true
+        },
+        email2: {
+            required: true,
+            email : true
+        },
+        contact_no2: {
+            required: true,
+            number :true
+        }
+        },
+        submitHandler: function() {
+        $.ajax({
+            type:'post',
+            url: "private_mail.php",
+            data: $("#revform").serialize(),
+            success: function(result){  
+            //alert(result);   
+            // $("#successmessage").html(result);
+                if(result==1) {
+                    $("#successmessage").show().delay( 1000 );
+                    //$("#successmessage").html("Thanks for flying with EAA. We will get back to you soon.");
+                    $("#revform")[0].reset();
+                    $("#successmessage").fadeOut(5000);   
+                    window.location = 'thank-you.php';
+                } else {
+                    $("#successmessage").show().delay( 1000 );
+                    $("#successmessage").addClass("failmessage");
+                    $("#successmessage").html("Something went wrong. Please try submitting again.");            
+                    $("#successmessage").fadeOut(5000);
+                }
+            }
+            
+        });
+        }
+
+        
+    });
+$(document).on("change", ".select2-offscreen", function () {
+    if (!$.isEmptyObject(validobj.submitted)) {
+        validobj.form();
+    }
+});
+return Obj.valid();
+
+
+    
+
+} 
+$(document).ready(function() {
+
+
+    $('#searchfield .next-fieldset').click(function(){
+    
+    
+    $('#departure').empty().text($('#departure_city :selected').text());
+    $('#arrival').empty().text($('#arrival_city :selected').text());
+    $('#date').empty().text($('#departure_date').val());
+    $('#retn_date').empty().text($('#return_date').val());
+    $('#select').empty().text($('#selectBox :selected').text());
+    $('#first_name').empty().text($('#first_name2').val());
+    $('#last_name').empty().text($('#last_name2').val());
+    $('#contact').empty().text($('#contact_no2').val());
+    $('#email').empty().text($('#email2').val());
+    
+    
+    });
+        
+     });
