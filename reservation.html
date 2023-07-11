@@ -37,7 +37,7 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     
-    <script src="lib/jquery.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
 </head>
 
 <body>
@@ -130,7 +130,9 @@
                 </div>
                 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <form class="revform" id="revform" method="post"> 
+                    <div class="form">
+                    <div style='padding-bottom:10px;'><span id="successmessage"  style="color:#16A765;"></span></div>
+                    <form class="revsform" id="revsform" method="post"> 
                         <fieldset class="revdata">
                             <div class="col-12">
                                 <div class="form-floating">
@@ -287,7 +289,7 @@
                                 <div class="form-floating">
                                     
                                     <div><i class="ti-calendar"></i>
-                                        <input type="text" class="datepicker" placeholder="Arrival Date" name="return_date" id="return_date" />
+                                        <input type="text" class="form-control form-date datepicker" placeholder="Arrival Date" name="return_date" id="return_date" />
                                       </div>  
                                 </div>
                             </div>
@@ -355,13 +357,10 @@
                               </div>
                             </div>
                         </fieldset>
-
-                            
-
-                            
-                        </div>
+                        <div class="clear"></div>
                     </form>
-                </div>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -456,7 +455,7 @@
     <script src="js/revform.min.js"></script>
     <script src="lib/select2-4.0.13/dist/js/select2.min.js"></script>
     
-    <script src="lib/datetimepicker-master/jquery.datetimepicker.js"></script>
+    <script src="lib/datetimepicker-master/build/jquery.datetimepicker.full.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

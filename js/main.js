@@ -115,17 +115,7 @@
         }
     });
 
-    
-        
-   
-    
-    
-       
-    
-       
-      
-       
-    
+     
 })(jQuery);
 
 $('.js-example-basic-single').select2();
@@ -145,12 +135,12 @@ $('#return_date').datetimepicker({
     timepicker:false
 });
 
-$(".revform").revform({
+$(".revsform").revform({
     speed : 500,
     transition : 'fade',
     //progressBar : true,
     //showProgressText : true,
-    validate: true
+    validate: false
 });
 
 
