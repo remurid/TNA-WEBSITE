@@ -106,215 +106,222 @@
                     <h1 class="display-5 mb-4">If You Have Any Queries, Please Feel Free To Contact Us</h1>
                     
                     <div class="row g-4">
-                        <div class="col-6">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
-                                    <i class="fa fa-phone-alt text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle">
-                                    <i class="fa fa-envelope text-white"></i>
-                                </div>
-                                <div class="ms-3">
-                                    
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
                 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="form">
+                    <div class="form" id="searchfield">
                     <div style='padding-bottom:10px;'><span id="successmessage"  style="color:#16A765;"></span></div>
                     <form class="revsform" id="revsform" method="post"> 
                         <fieldset class="revdata">
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <select class="js-example-basic-single" name="state" style="width:100%;">
-                                        <option value="AL">Alabama</option>
-                                          ...
-                                        <option value="WY">Wyoming</option>
-                                    </select>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="select " name="state"  style="width:100%;">
+                                            <option value="" disabled selected>Flight Type</option>
+                                            <option value="PC">Private Charter</option>
+                                            <option value="CA">Cargo</option>
+                                            <option value="AA">Air Ambulance</option>
+                                            
+                                        </select>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <select class="js-example-basic-single" name="state" style="width:100%;">
-                                        <option value="">Select Departure City</option>
-                                        <option value="1">Adaba Airport, Adaba, HAAD, Ethiopia</option>
-                                        <option value="2">Bole Int’l Airport, Addis Ababa, HAAB, Ethiopia</option>
-                                        <option value="3">Arba Minch Airport, Arba Minch, HAAM, Ethiopia</option>
-                                        <option value="4">Asosa Airport, Asosa, HASO, Ethiopia </option>
-                                        <option value="5">Awasa Airport, Awasa, HALA, Ethiopia</option>
-                                        <option value="6">Axum Airport, Axum, HAAX, Ethiopia</option>
-                                        <option value="7">Bahir Dar Airport, Bahir Dar, HABD, Ethiopia</option>
-                                        <option value="8">Beica Airport, Beica, HABE, Ethiopia</option>
-                                        <option value="9">Bulchi Airport, Bulchi, HABU, Ethiopia</option>
-                                        <option value="10">Combolcha Airport, Combolcha, HADC, Ethiopia</option>
-                                        <option value="11">Dansha Airport, Dansha, HADA, Ethiopia</option>
-                                        <option value="12">Debre Marqos Airport, HADM, Ethiopia</option>
-                                        <option value="13">Debre Tabor Airpot, HADT, Ethiopia</option>
-                                        <option value="14">Dembidolo Airport, Dembidolo, HADD, Ethiopia</option>
-                                        <option value="15">Dire Dawa Airport, Dire Dawa, HADR, Ethiopia</option>
-                                        <option value="16">Dodola Airport, Dodola, HADO, Ethiopia</option>
-                                        <option value="17">Dolo Airport, Dolo, Ethiopia</option>
-                                        <option value="18">Fincha Airport, Fincha, HAFN, Ethiopia</option>
-                                        <option value="19">Gambela Airport, Gambela, HAGM, Ethiopia</option>
-                                        <option value="20">Ghinnir Airport, Ghinnir, HAGH, Ethiopia</option>
-                                        <option value="21">Goba Airport, Goba, HAGB, Ethiopia</option>
-                                        <option value="22">Gode Airport, Gode, HAGO, Ethiopia</option>
-                                        <option value="23">Gondar Airport, Gondar, HAGN, Ethiopia</option>
-                                        <option value="24">Gore Aiport, Gore, HAGR, Ethiopia</option>
-                                        <option value="25">Himera Airport, Humera, HAHU, Ethiopia</option>
-                                        <option value="26">Garaad Airport, Jijiga, HAJJ, Ethiopia</option>
-                                        <option value="27">Jimma Airport, Jimma, HAJM, Ethiopia</option>
-                                        <option value="28">Jinka Airport, Jinka, HABC, Ethiopia</option>
-                                        <option value="29">Kabri Dar Airport, Kabri Dar, HAKD, Ethiopia</option>
-                                        <option value="30">Lalibela Airport, Lalibela, HALL, Ethiopia</option>
-                                        <option value="31">Tum Airport, Maji, HAMJ, Ethiopia</option>
-                                        <option value="32">Makale Airport, Makale, HAMK, Ethiopia</option>
-                                        <option value="33">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
-                                        <option value="34">Mendi Airport, Mendi, HAMN, Ethiopia</option>
-                                        <option value="35">Genda Wuha Airport, Metema, HAMM, Ethiopia</option>
-                                        <option value="36">Mizan Teferi Airport, HAMT, Ethiopia</option>
-                                        <option value="37">Mui Airport, Mui, HAMR, Ethiopia</option>
-                                        <option value="38">Nejjo Airport, Nejo, HANJ, Ethiopia</option>
-                                        <option value="39">Nekemte Airport, Nekemte, HANK, Ethiopia</option>
-                                        <option value="40">Semera Airport, Semera, SZE, Ethiopia</option>
-                                        <option value="41">Shakiso Airport, Shakiso, HASK, Ethiopia</option>
-                                        <option value="42">Shilavo Airport, Shilavo, HIL, Ethiopia</option>
-                                        <option value="43">Shire Airport, Shire, SHC, Ethiopia</option>
-                                        <option value="44">Sodo Airport, Sodo, HASD, Ethiopia</option>
-                                        <option value="45">Tippi Airport, Tippi, HATP</option>
-                                        <option value="46">Wacca Airport, Wacca, HAWC, Ethiopia</option>
-                                        <option value="47">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
-                                        <option value="48">Hargeisa Egal Intl Airport, HCMH, Somalia</option>
-                                        <option value="49">Juba Intl Airport, Juba, HSSJ, Sudan</option>
-                                        <option value="50">Bender Qass. Intl Airport, HCMF, Somalia</option>
-                                        <option value="51">Jomo Intl Airport, Nairobi, HKJK, Kenya</option>
-                                        <option value="52">Khartoum Intl Airport, Khartoum, HSSS, Sudan</option>
-                                        <option value="53">Sana'a Intl Airport, Sana'a, OYSN, Yemen</option>
-                                        <option value="54">Dubai Intl Airport, OMDB, UAE</option>
-                                        <option value="55">O.R. Tambo Airpt, Jo’burg, FAOR, South Africa</option>
-                                        <option value="56">KAIA Intl Airpt, Jeddah, OEJN, Saudi Arabia</option>
-                                        <option value="57">Ambouli Intl Airport, Ambouli, HDAM, Djibouti</option>
-                    
-                                    </select>
-                                    
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="js-example-basic-single  form-control" name="state" id="departure_city" style="width:100%;">
+                                            <option value="" disabled selected>Select Departure City</option>
+                                            <option value="1">Adaba Airport, Adaba, HAAD, Ethiopia</option>
+                                            <option value="2">Bole Int’l Airport, Addis Ababa, HAAB, Ethiopia</option>
+                                            <option value="3">Arba Minch Airport, Arba Minch, HAAM, Ethiopia</option>
+                                            <option value="4">Asosa Airport, Asosa, HASO, Ethiopia </option>
+                                            <option value="5">Awasa Airport, Awasa, HALA, Ethiopia</option>
+                                            <option value="6">Axum Airport, Axum, HAAX, Ethiopia</option>
+                                            <option value="7">Bahir Dar Airport, Bahir Dar, HABD, Ethiopia</option>
+                                            <option value="8">Beica Airport, Beica, HABE, Ethiopia</option>
+                                            <option value="9">Bulchi Airport, Bulchi, HABU, Ethiopia</option>
+                                            <option value="10">Combolcha Airport, Combolcha, HADC, Ethiopia</option>
+                                            <option value="11">Dansha Airport, Dansha, HADA, Ethiopia</option>
+                                            <option value="12">Debre Marqos Airport, HADM, Ethiopia</option>
+                                            <option value="13">Debre Tabor Airpot, HADT, Ethiopia</option>
+                                            <option value="14">Dembidolo Airport, Dembidolo, HADD, Ethiopia</option>
+                                            <option value="15">Dire Dawa Airport, Dire Dawa, HADR, Ethiopia</option>
+                                            <option value="16">Dodola Airport, Dodola, HADO, Ethiopia</option>
+                                            <option value="17">Dolo Airport, Dolo, Ethiopia</option>
+                                            <option value="18">Fincha Airport, Fincha, HAFN, Ethiopia</option>
+                                            <option value="19">Gambela Airport, Gambela, HAGM, Ethiopia</option>
+                                            <option value="20">Ghinnir Airport, Ghinnir, HAGH, Ethiopia</option>
+                                            <option value="21">Goba Airport, Goba, HAGB, Ethiopia</option>
+                                            <option value="22">Gode Airport, Gode, HAGO, Ethiopia</option>
+                                            <option value="23">Gondar Airport, Gondar, HAGN, Ethiopia</option>
+                                            <option value="24">Gore Aiport, Gore, HAGR, Ethiopia</option>
+                                            <option value="25">Himera Airport, Humera, HAHU, Ethiopia</option>
+                                            <option value="26">Garaad Airport, Jijiga, HAJJ, Ethiopia</option>
+                                            <option value="27">Jimma Airport, Jimma, HAJM, Ethiopia</option>
+                                            <option value="28">Jinka Airport, Jinka, HABC, Ethiopia</option>
+                                            <option value="29">Kabri Dar Airport, Kabri Dar, HAKD, Ethiopia</option>
+                                            <option value="30">Lalibela Airport, Lalibela, HALL, Ethiopia</option>
+                                            <option value="31">Tum Airport, Maji, HAMJ, Ethiopia</option>
+                                            <option value="32">Makale Airport, Makale, HAMK, Ethiopia</option>
+                                            <option value="33">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
+                                            <option value="34">Mendi Airport, Mendi, HAMN, Ethiopia</option>
+                                            <option value="35">Genda Wuha Airport, Metema, HAMM, Ethiopia</option>
+                                            <option value="36">Mizan Teferi Airport, HAMT, Ethiopia</option>
+                                            <option value="37">Mui Airport, Mui, HAMR, Ethiopia</option>
+                                            <option value="38">Nejjo Airport, Nejo, HANJ, Ethiopia</option>
+                                            <option value="39">Nekemte Airport, Nekemte, HANK, Ethiopia</option>
+                                            <option value="40">Semera Airport, Semera, SZE, Ethiopia</option>
+                                            <option value="41">Shakiso Airport, Shakiso, HASK, Ethiopia</option>
+                                            <option value="42">Shilavo Airport, Shilavo, HIL, Ethiopia</option>
+                                            <option value="43">Shire Airport, Shire, SHC, Ethiopia</option>
+                                            <option value="44">Sodo Airport, Sodo, HASD, Ethiopia</option>
+                                            <option value="45">Tippi Airport, Tippi, HATP</option>
+                                            <option value="46">Wacca Airport, Wacca, HAWC, Ethiopia</option>
+                                            <option value="47">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
+                                            <option value="48">Hargeisa Egal Intl Airport, HCMH, Somalia</option>
+                                            <option value="49">Juba Intl Airport, Juba, HSSJ, Sudan</option>
+                                            <option value="50">Bender Qass. Intl Airport, HCMF, Somalia</option>
+                                            <option value="51">Jomo Intl Airport, Nairobi, HKJK, Kenya</option>
+                                            <option value="52">Khartoum Intl Airport, Khartoum, HSSS, Sudan</option>
+                                            <option value="53">Sana'a Intl Airport, Sana'a, OYSN, Yemen</option>
+                                            <option value="54">Dubai Intl Airport, OMDB, UAE</option>
+                                            <option value="55">O.R. Tambo Airpt, Jo’burg, FAOR, South Africa</option>
+                                            <option value="56">KAIA Intl Airpt, Jeddah, OEJN, Saudi Arabia</option>
+                                            <option value="57">Ambouli Intl Airport, Ambouli, HDAM, Djibouti</option>
+                        
+                                        </select>
+                                        
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <select class="js-example-basic-single form-control" name="state" style="width:100%;">
-                                        <option value="">Select Departure City</option>
-                                        <option value="1">Adaba Airport, Adaba, HAAD, Ethiopia</option>
-                                        <option value="2">Bole Int’l Airport, Addis Ababa, HAAB, Ethiopia</option>
-                                        <option value="3">Arba Minch Airport, Arba Minch, HAAM, Ethiopia</option>
-                                        <option value="4">Asosa Airport, Asosa, HASO, Ethiopia </option>
-                                        <option value="5">Awasa Airport, Awasa, HALA, Ethiopia</option>
-                                        <option value="6">Axum Airport, Axum, HAAX, Ethiopia</option>
-                                        <option value="7">Bahir Dar Airport, Bahir Dar, HABD, Ethiopia</option>
-                                        <option value="8">Beica Airport, Beica, HABE, Ethiopia</option>
-                                        <option value="9">Bulchi Airport, Bulchi, HABU, Ethiopia</option>
-                                        <option value="10">Combolcha Airport, Combolcha, HADC, Ethiopia</option>
-                                        <option value="11">Dansha Airport, Dansha, HADA, Ethiopia</option>
-                                        <option value="12">Debre Marqos Airport, HADM, Ethiopia</option>
-                                        <option value="13">Debre Tabor Airpot, HADT, Ethiopia</option>
-                                        <option value="14">Dembidolo Airport, Dembidolo, HADD, Ethiopia</option>
-                                        <option value="15">Dire Dawa Airport, Dire Dawa, HADR, Ethiopia</option>
-                                        <option value="16">Dodola Airport, Dodola, HADO, Ethiopia</option>
-                                        <option value="17">Dolo Airport, Dolo, Ethiopia</option>
-                                        <option value="18">Fincha Airport, Fincha, HAFN, Ethiopia</option>
-                                        <option value="19">Gambela Airport, Gambela, HAGM, Ethiopia</option>
-                                        <option value="20">Ghinnir Airport, Ghinnir, HAGH, Ethiopia</option>
-                                        <option value="21">Goba Airport, Goba, HAGB, Ethiopia</option>
-                                        <option value="22">Gode Airport, Gode, HAGO, Ethiopia</option>
-                                        <option value="23">Gondar Airport, Gondar, HAGN, Ethiopia</option>
-                                        <option value="24">Gore Aiport, Gore, HAGR, Ethiopia</option>
-                                        <option value="25">Himera Airport, Humera, HAHU, Ethiopia</option>
-                                        <option value="26">Garaad Airport, Jijiga, HAJJ, Ethiopia</option>
-                                        <option value="27">Jimma Airport, Jimma, HAJM, Ethiopia</option>
-                                        <option value="28">Jinka Airport, Jinka, HABC, Ethiopia</option>
-                                        <option value="29">Kabri Dar Airport, Kabri Dar, HAKD, Ethiopia</option>
-                                        <option value="30">Lalibela Airport, Lalibela, HALL, Ethiopia</option>
-                                        <option value="31">Tum Airport, Maji, HAMJ, Ethiopia</option>
-                                        <option value="32">Makale Airport, Makale, HAMK, Ethiopia</option>
-                                        <option value="33">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
-                                        <option value="34">Mendi Airport, Mendi, HAMN, Ethiopia</option>
-                                        <option value="35">Genda Wuha Airport, Metema, HAMM, Ethiopia</option>
-                                        <option value="36">Mizan Teferi Airport, HAMT, Ethiopia</option>
-                                        <option value="37">Mui Airport, Mui, HAMR, Ethiopia</option>
-                                        <option value="38">Nejjo Airport, Nejo, HANJ, Ethiopia</option>
-                                        <option value="39">Nekemte Airport, Nekemte, HANK, Ethiopia</option>
-                                        <option value="40">Semera Airport, Semera, SZE, Ethiopia</option>
-                                        <option value="41">Shakiso Airport, Shakiso, HASK, Ethiopia</option>
-                                        <option value="42">Shilavo Airport, Shilavo, HIL, Ethiopia</option>
-                                        <option value="43">Shire Airport, Shire, SHC, Ethiopia</option>
-                                        <option value="44">Sodo Airport, Sodo, HASD, Ethiopia</option>
-                                        <option value="45">Tippi Airport, Tippi, HATP</option>
-                                        <option value="46">Wacca Airport, Wacca, HAWC, Ethiopia</option>
-                                        <option value="47">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
-                                        <option value="48">Hargeisa Egal Intl Airport, HCMH, Somalia</option>
-                                        <option value="49">Juba Intl Airport, Juba, HSSJ, Sudan</option>
-                                        <option value="50">Bender Qass. Intl Airport, HCMF, Somalia</option>
-                                        <option value="51">Jomo Intl Airport, Nairobi, HKJK, Kenya</option>
-                                        <option value="52">Khartoum Intl Airport, Khartoum, HSSS, Sudan</option>
-                                        <option value="53">Sana'a Intl Airport, Sana'a, OYSN, Yemen</option>
-                                        <option value="54">Dubai Intl Airport, OMDB, UAE</option>
-                                        <option value="55">O.R. Tambo Airpt, Jo’burg, FAOR, South Africa</option>
-                                        <option value="56">KAIA Intl Airpt, Jeddah, OEJN, Saudi Arabia</option>
-                                        <option value="57">Ambouli Intl Airport, Ambouli, HDAM, Djibouti</option>
-                    
-                                      </select>
-                                    
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="js-example-basic-single form-control" name="state" id="arrival_city" style="width:100%;">
+                                            <option value="" disabled selected>Select Arrival City</option>
+                                            <option value="1">Adaba Airport, Adaba, HAAD, Ethiopia</option>
+                                            <option value="2">Bole Int’l Airport, Addis Ababa, HAAB, Ethiopia</option>
+                                            <option value="3">Arba Minch Airport, Arba Minch, HAAM, Ethiopia</option>
+                                            <option value="4">Asosa Airport, Asosa, HASO, Ethiopia </option>
+                                            <option value="5">Awasa Airport, Awasa, HALA, Ethiopia</option>
+                                            <option value="6">Axum Airport, Axum, HAAX, Ethiopia</option>
+                                            <option value="7">Bahir Dar Airport, Bahir Dar, HABD, Ethiopia</option>
+                                            <option value="8">Beica Airport, Beica, HABE, Ethiopia</option>
+                                            <option value="9">Bulchi Airport, Bulchi, HABU, Ethiopia</option>
+                                            <option value="10">Combolcha Airport, Combolcha, HADC, Ethiopia</option>
+                                            <option value="11">Dansha Airport, Dansha, HADA, Ethiopia</option>
+                                            <option value="12">Debre Marqos Airport, HADM, Ethiopia</option>
+                                            <option value="13">Debre Tabor Airpot, HADT, Ethiopia</option>
+                                            <option value="14">Dembidolo Airport, Dembidolo, HADD, Ethiopia</option>
+                                            <option value="15">Dire Dawa Airport, Dire Dawa, HADR, Ethiopia</option>
+                                            <option value="16">Dodola Airport, Dodola, HADO, Ethiopia</option>
+                                            <option value="17">Dolo Airport, Dolo, Ethiopia</option>
+                                            <option value="18">Fincha Airport, Fincha, HAFN, Ethiopia</option>
+                                            <option value="19">Gambela Airport, Gambela, HAGM, Ethiopia</option>
+                                            <option value="20">Ghinnir Airport, Ghinnir, HAGH, Ethiopia</option>
+                                            <option value="21">Goba Airport, Goba, HAGB, Ethiopia</option>
+                                            <option value="22">Gode Airport, Gode, HAGO, Ethiopia</option>
+                                            <option value="23">Gondar Airport, Gondar, HAGN, Ethiopia</option>
+                                            <option value="24">Gore Aiport, Gore, HAGR, Ethiopia</option>
+                                            <option value="25">Himera Airport, Humera, HAHU, Ethiopia</option>
+                                            <option value="26">Garaad Airport, Jijiga, HAJJ, Ethiopia</option>
+                                            <option value="27">Jimma Airport, Jimma, HAJM, Ethiopia</option>
+                                            <option value="28">Jinka Airport, Jinka, HABC, Ethiopia</option>
+                                            <option value="29">Kabri Dar Airport, Kabri Dar, HAKD, Ethiopia</option>
+                                            <option value="30">Lalibela Airport, Lalibela, HALL, Ethiopia</option>
+                                            <option value="31">Tum Airport, Maji, HAMJ, Ethiopia</option>
+                                            <option value="32">Makale Airport, Makale, HAMK, Ethiopia</option>
+                                            <option value="33">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
+                                            <option value="34">Mendi Airport, Mendi, HAMN, Ethiopia</option>
+                                            <option value="35">Genda Wuha Airport, Metema, HAMM, Ethiopia</option>
+                                            <option value="36">Mizan Teferi Airport, HAMT, Ethiopia</option>
+                                            <option value="37">Mui Airport, Mui, HAMR, Ethiopia</option>
+                                            <option value="38">Nejjo Airport, Nejo, HANJ, Ethiopia</option>
+                                            <option value="39">Nekemte Airport, Nekemte, HANK, Ethiopia</option>
+                                            <option value="40">Semera Airport, Semera, SZE, Ethiopia</option>
+                                            <option value="41">Shakiso Airport, Shakiso, HASK, Ethiopia</option>
+                                            <option value="42">Shilavo Airport, Shilavo, HIL, Ethiopia</option>
+                                            <option value="43">Shire Airport, Shire, SHC, Ethiopia</option>
+                                            <option value="44">Sodo Airport, Sodo, HASD, Ethiopia</option>
+                                            <option value="45">Tippi Airport, Tippi, HATP</option>
+                                            <option value="46">Wacca Airport, Wacca, HAWC, Ethiopia</option>
+                                            <option value="47">Mekane Selam, Mekane Selam, HAMA, Ethiopia</option>
+                                            <option value="48">Hargeisa Egal Intl Airport, HCMH, Somalia</option>
+                                            <option value="49">Juba Intl Airport, Juba, HSSJ, Sudan</option>
+                                            <option value="50">Bender Qass. Intl Airport, HCMF, Somalia</option>
+                                            <option value="51">Jomo Intl Airport, Nairobi, HKJK, Kenya</option>
+                                            <option value="52">Khartoum Intl Airport, Khartoum, HSSS, Sudan</option>
+                                            <option value="53">Sana'a Intl Airport, Sana'a, OYSN, Yemen</option>
+                                            <option value="54">Dubai Intl Airport, OMDB, UAE</option>
+                                            <option value="55">O.R. Tambo Airpt, Jo’burg, FAOR, South Africa</option>
+                                            <option value="56">KAIA Intl Airpt, Jeddah, OEJN, Saudi Arabia</option>
+                                            <option value="57">Ambouli Intl Airport, Ambouli, HDAM, Djibouti</option>
+                        
+                                        </select>
+                                        
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-md-6">
+                                <div class="col-md-6">
                                 <div class="form-floating">
                             
                                     <div><i class="ti-calendar"></i>
-                                        <input type="text" placeholder="Departure Date" name="departure_date" id="departure_date" class="form-control form-date datepicker">
+                                        <input type="text" placeholder="Departure Date" name="departure_date" id="departure_date" class="form-control form-date  datepicker">
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                                       </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    
-                                    <div><i class="ti-calendar"></i>
-                                        <input type="text" class="form-control form-date datepicker" placeholder="Arrival Date" name="return_date" id="return_date" />
-                                      </div>  
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <select class="js-example-basic-single" name="state" style="width:100%;">
-                                        <option value="AL">Alabama</option>
-                                          ...
-                                        <option value="WY">Wyoming</option>
-                                    </select>
+                                <!-- <div class="col-md-6">
+                                    <div class="form-floating">
+                                        
+                                        <div><i class="ti-calendar"></i>
+                                            <input type="text" class="form-control form-date datepicker" placeholder="Arrival Date" name="return_date" id="return_date" />
+                                        </div>  
+                                    </div>
+                                </div> -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="select" name="state" style="width:100%;" id="selectBox">
+                                            <option value="" disabled selected>Number of Flyers</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                
+                                            
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
 
                         <fieldset class="personaldata">
+                        <div class="row g-3">
                            <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="F_name" name="F_name" placeholder="First Name">
+                                    <label for="F_name">First Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
+                                    <input type="text" class="form-control" id="L_name" name="L_name" placeholder="Last Name">
+                                    <label for="L_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
                                     <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
                                     <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-floating">
+                                    <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your Phone">
+                                    <label for="phone">Your Phone Number</label>
                                 </div>
                             </div>
                             
@@ -322,10 +329,10 @@
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Leave a message here" id="message" name="message"
                                         style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
+                                    <label for="message">Any additonal Message</label>
                                 </div>
                             </div> 
-
+                        </div>
                         </fieldset>
 
                         <fieldset class="msgdetails">
@@ -333,29 +340,16 @@
                               <p>Departure City: <span id="departure"></span></p>
                               <p>Arrival City: <span id="arrival"></span></p>
                               <p>Departure Date: <span id="date"></span></p>
-                              <p>Return Date: <span id="retn_date"></span></p>
-                              <br>
                               <p>Number of Flyers: <span id="select"></span></p>
+                              <br>
+                              
                               <p>First Name: <span id="first_name"></span></p>
                               <p>Last Name: <span id="last_name"></span></p>
                               <p>Phone: <span id="contact"></span></p>
                               <p>Email: <span id="email"></span></p>
+                              <p>Additional Comment: <span id="msg"></span></p>
                             </div>
-                            <div class="row collapse">
-                              <div class="hide-for-small-only medium-12 large-12 columns">
-                                <div class="row collapse">
-                                  <div class="hide-for-small-only medium-12 large-12 columns">
-                                    <ul>
-                                      <li class="full">
-                                        <label style="display:block;">Additional Comments</label>
-                                        <textarea placeholder="Enter your comments" class="textArea" id="additional_details" name="additional_details"></textarea>
-                                        </textarea>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                            
                         </fieldset>
                         <div class="clear"></div>
                     </form>

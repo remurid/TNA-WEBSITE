@@ -121,10 +121,10 @@
 $('.js-example-basic-single').select2();
 $('#departure_date').datetimepicker({
     //formatTime:'H:i',
-    format:'d/m/Y',
+    format:'d/m/Y H:i',
     formatDate:'Y/m/d',
     minDate: 0,
-    timepicker:false 
+    timepicker:true 
 });
 
 $('#return_date').datetimepicker({
@@ -224,17 +224,16 @@ $(document).ready(function() {
 
     $('#searchfield .next-fieldset').click(function(){
     
-    
-    $('#departure').empty().text($('#departure_city :selected').text());
-    $('#arrival').empty().text($('#arrival_city :selected').text());
-    $('#date').empty().text($('#departure_date').val());
-    $('#retn_date').empty().text($('#return_date').val());
-    $('#select').empty().text($('#selectBox :selected').text());
-    $('#first_name').empty().text($('#first_name2').val());
-    $('#last_name').empty().text($('#last_name2').val());
-    $('#contact').empty().text($('#contact_no2').val());
-    $('#email').empty().text($('#email2').val());
-    
+        $('#departure').empty().text($('#departure_city :selected').text());
+        $('#arrival').empty().text($('#arrival_city :selected').text());
+        $('#date').empty().text($('#departure_date').val());
+        
+        $('#select').empty().text($('#selectBox :selected').text());
+        $('#first_name').empty().text($('#F_name').val());
+        $('#last_name').empty().text($('#L_name').val());
+        $('#contact').empty().text($('#phone').val());
+        $('#email').empty().text($('#email').val());
+        $('#msg').empty().text($('#message').val());
     
     });
         
